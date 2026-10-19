@@ -1,5 +1,22 @@
 # PrivateBin version history
 
+## nvnc fork changes (based on PrivateBin 2.1.0)
+
+This entry documents every deviation of the nvnc fork from upstream PrivateBin,
+so changes can be re-applied after upstream upgrades. This is an altered
+version of PrivateBin (zlib license, condition 2).
+
+* ADDED: `README.md` fork notice
+* ADDED: `CHANGELOG.md` fork entry (this section)
+* ADDED: `css/nvnc.css` — fork visual identity, loaded by the bootstrap5 template
+* CHANGED: `tpl/bootstrap5.php` — one added line linking `css/nvnc.css`
+* CHANGED: deployment config `cfg/conf.php` (not committed to this repo):
+  name "nvnc", basepath https://secrets.olynthe.org/, info text keeps the
+  PrivateBin attribution and links this fork's source
+* ADDED: `.gitignore` — excludes runtime `cfg/conf.php` and `data/` from the public repo
+* UNCHANGED: LICENSE.md, CREDITS.md, all PHP/JS logic (including encryption),
+  security headers and defaults
+
 ## 2.1.0 (2026-10-18)
 * ADDED: Added `shortenviachhoto` endpoint with an `chhoto` configuration section
 * ADDED: Translation for Chinese (Traditional)

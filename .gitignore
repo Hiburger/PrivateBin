@@ -1,0 +1,3 @@
+# Runtime deployment files — not part of the published fork source
+/cfg/conf.php
+/data/

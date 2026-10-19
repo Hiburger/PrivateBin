@@ -14,6 +14,22 @@ This is a fork of ZeroBin, originally developed by
 refactored to allow easier and cleaner extensions and has many additional
 features.
 
+## Fork notice: nvnc
+
+This is a modified fork of [PrivateBin](https://github.com/PrivateBin/PrivateBin),
+deployed at https://secrets.olynthe.org/. It is not affiliated with or endorsed
+by the PrivateBin project.
+
+* Upstream project: https://github.com/PrivateBin/PrivateBin
+* This fork's source (the complete corresponding source for the hosted
+  instance): https://github.com/Hiburger/PrivateBin
+* License: same as upstream — the Zlib/libpng license for PrivateBin code (see
+  [LICENSE.md](LICENSE.md), which also covers the bundled third-party
+  libraries); this fork's modifications carry no additional restrictions.
+* All deviations from upstream are listed in the "nvnc fork changes" entry at
+  the top of [CHANGELOG.md](CHANGELOG.md). If you use the hosted instance, you
+  can obtain the complete corresponding source of this fork at the URL above.
+
 ## What PrivateBin provides
 
 + As a server administrator you don't have to worry if your users post content
