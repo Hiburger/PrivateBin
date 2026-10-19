@@ -9,7 +9,8 @@ version of PrivateBin (zlib license, condition 2).
 * ADDED: `README.md` fork notice
 * ADDED: `CHANGELOG.md` fork entry (this section)
 * ADDED: `css/nvnc.css` — fork visual identity, loaded by the bootstrap5 template
-* CHANGED: `tpl/bootstrap5.php` — one added line linking `css/nvnc.css`
+* ADDED: `js/nvnc.js` — keeps tab-to-tab-character input permanently enabled: hides the editor toggle switch (checkbox stays in the DOM and checked) and suppresses the [Esc]/[Ctrl]+[m] toggle
+* CHANGED: `tpl/bootstrap5.php` — one added line linking `css/nvnc.css`, one added line loading `js/nvnc.js`; navbar brand logo replaced by the site name text (upstream PrivateBin logo icon no longer shown; footer attribution kept)
 * CHANGED: deployment config `cfg/conf.php` (not committed to this repo):
   name "nvnc", basepath https://secrets.olynthe.org/, info text keeps the
   PrivateBin attribution and links this fork's source

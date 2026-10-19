@@ -12,6 +12,7 @@ use PrivateBin\I18n;
 		<title><?php echo I18n::_($NAME); ?></title>
 		<link type="text/css" rel="stylesheet" href="css/bootstrap5/bootstrap<?php echo I18n::isRtl() ? '.rtl' : ''; ?>-5.3.8.css" />
 		<link type="text/css" rel="stylesheet" href="css/bootstrap5/privatebin.css?<?php echo rawurlencode($VERSION); ?>" />
+		<link type="text/css" rel="stylesheet" href="css/nvnc.css?<?php echo rawurlencode($VERSION); ?>" />
 <?php
 if ($SYNTAXHIGHLIGHTING) :
 ?>
@@ -52,6 +53,7 @@ endif;
 		<?php $this->_scriptTag('js/purify-3.4.17.js', 'defer'); ?>
 		<?php $this->_scriptTag('js/legacy.js', 'defer'); ?>
 		<?php $this->_scriptTag('js/privatebin.js', 'defer'); ?>
+		<?php $this->_scriptTag('js/nvnc.js', 'defer'); ?>
 		<!-- icon -->
 		<link rel="apple-touch-icon" href="<?php echo I18n::encode($BASEPATH); ?>img/apple-touch-icon.png" sizes="180x180" />
 		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
@@ -152,7 +154,7 @@ endif;
 		<nav class="navbar navbar-expand-lg bg-body-tertiary text-nowrap mb-3">
 			<div class="container-fluid">
 				<a class="reloadlink navbar-brand" href="">
-					<img alt="<?php echo I18n::_($NAME); ?>" src="img/icon.svg" height="38" />
+					<?php echo I18n::_($NAME); ?>
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="<?php echo I18n::_('Toggle navigation'); ?>">
 					<span class="navbar-toggler-icon"></span>
