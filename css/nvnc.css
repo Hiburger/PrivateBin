@@ -1,0 +1,37 @@
+/**
+ * nvnc, a fork of PrivateBin hosted on a secure server, reachable at nvnc.olynthe.org (original project -> https://github.com/PrivateBin/PrivateBin)
+ * @license https://www.opensource.org/licenses/zlib-license.php The zlib/libpng License
+ */
+
+:root {
+	--nvnc-accent: #7aa2f7; /* adjust to taste */
+}
+
+p.form-check.form-switch:has(> #messagetab) {
+	display: none;
+}
+
+.navbar-brand {
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+/* footer credit to upstream PrivateBin */
+
+footer h5 {
+	font-size: 0.95rem;
+}
+footer h5 small {
+	color: var(--bs-secondary-color);
+}
+#aboutbox {
+	font-size: 0.85rem;
+	color: var(--bs-secondary-color);
+}
+#aboutbox a {
+	color: var(--nvnc-accent);
+	text-decoration: none;
+}
+#aboutbox a:hover {
+	text-decoration: underline;
+}
